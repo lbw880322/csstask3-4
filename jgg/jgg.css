@@ -1,0 +1,57 @@
+body{
+
+font-size: 15px;
+
+font-family: "微软雅黑" , Arial Tahoma;
+
+}
+
+*{
+
+margin:0;
+
+padding: 0;
+
+}
+
+ul li{
+
+list-style: none;
+
+}
+
+.box{
+
+  margin:0 auto;
+  margin-top: 50px;
+  padding:10px;
+  height:400px;
+  width:240px;
+  text-align: center;
+}
+
+ul li {
+
+    height: 60px;
+    width:60px;
+    margin: 10px;
+    border-radius: 5px;
+    background:#FEA600;
+    float:left;
+}
+
+.click input {
+
+    margin-top:10px;
+    height:30px;
+    width:200px;
+    border:1px solid #FEA600;
+    border-radius: 5px;
+    color:#FEA600;
+    background: white;
+    vertical-align: middle;
+}
+
+.clear{
+    clear:both;
+}
