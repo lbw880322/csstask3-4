@@ -5,10 +5,7 @@ window.onload = function(){
    var len = arr.length;
    var start = document.getElementById("start");
    var stop = document.getElementById("stop");
-   var rm = document.getElementById("rm");
    var time = null;
-
- 
 
  function sta(){
 
@@ -38,64 +35,49 @@ window.onload = function(){
 
   function changeBg(){
 
-   var a = Math.floor(Math.random()*255);
-   var b = Math.floor(Math.random()*255);
-   var c = Math.floor(Math.random()*255);
-   var randomList = randomNum(arr);//返回li的随机数
-   var num1 = 0;
-   var num2 = 0;
-   var num3 = 0;
+             var num1 = 0;
+             var num2 = 0;
+             var num3 = 0;
+             var color = new Array(3);
+             // var num = new Array(3);
+      //        for(var i =  0 ;i < num.length; i++ ){
+      //             num[i]=Math.floor(Math.random()*len);
+      //               console.log(num[i]);
 
-    function randomNum(arr){
+      // }   
 
-   return arr[Math.floor(Math.random()*len)];
-
-  }
-   function re(){
-    num1 = Math.floor(Math.random()*len);
-    num2 = Math.floor(Math.random()*len);
-    num3 = Math.floor(Math.random()*len);
+         for(var i = 0 ; i < len ; i++) {
+               
+               arr[i].style.background = "#FEA600";//方块颜色变为初始颜色
+      }
+        for(var i =  0 ; i < color.length; i++){
+                  color[i]="rgb("+Math.floor(Math.random()*256)+','+Math.floor(Math.random()*256)+','+Math.floor(Math.random()*256)+")";
+                    // console.log(color[i]);
+      }   //使用for循环使数组获取三个随机的颜色
+   
+ function re(){
+      num1 = Math.floor(Math.random()*len);
+      num2 = Math.floor(Math.random()*len);
+      num3 = Math.floor(Math.random()*len);
     if(num1 == num2 || num2 == num3 || num1 == num3){
       re();
     }
 
 }
    re();
-   console.log(num1 +''+num2+''+num3 );
-
- 
-
-     var c = ["rgb("+a+","+b+","+c+")"];
-     var cl = c.length;
-     var radomColor = color(c); //返回的随机颜色
-
-    function color(c){
-
-     for(var i = 0, len = arr.length ; i < len ; i++) {
-
-        arr[i].style.background = "#FEA600";
-    }
-
-            return c[Math.floor(Math.random()*cl)];
-
-      }
-
-       arr[num1].style.background = radomColor;
-       arr[num2].style.background = radomColor;
-       arr[num3].style.background = radomColor;
-
+       arr[num1].style.background = color[0];
+       arr[num2].style.background = color[1];
+       arr[num3].style.background = color[2];
 };
 
 start.onclick =  function(){
     clearInterval(time);
     time = setInterval(changeBg,1000);
 
-  };
+};
 
-  
-
-  function sto(){
-
+function sto(){
+    
     stop.style.background = "#FEA600";
     stop.style.color = "white";
 
@@ -122,13 +104,7 @@ start.onclick =  function(){
 
  stop.onclick = function(){
 
-      function randomNum(arr){
-
-   return arr[Math.floor(Math.random()*l)];
-
-   }
-
-    for(var i = 0, len = arr.length ; i < len ; i++){
+    for(var i = 0 ; i < len ; i++){
 
         arr[i].style.background = "#FEA600";
 
