@@ -1,0 +1,113 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html , body{
+ width:100%;
+ height: 100%;
+ font-size: 75%;
+ font-family:'微软雅黑';
+}
+
+.top{
+	width:100%;
+	/*width:640px;*/
+	height: 5.3rem;
+	/*height: 88px;*/
+    background-color: #22292C;
+	padding-top:2rem ;
+	color:#F8F6F5;
+	display:flex;
+    justify-content:center;
+    align-items:center; 
+}
+.title {
+	font-size: 2.75rem;
+	/*font-size: 33px;*/
+	text-align: center;
+	margin: 0 auto;
+	
+}
+.d{
+	float: right;
+	margin-right: 1.5rem;
+	
+}
+
+
+.top span{
+
+	float:left;
+	font-size: 2rem;
+	/*font-size: 24px;*/
+
+}
+.arrow{
+	float:left;
+	margin:0 0.8rem;
+	/*vertical-align:middle;*/
+}
+
+.main{
+	
+    justify-content:center;
+    /*align-items:center; */
+	width:100%;
+	height: 84.1rem;
+	background-color:#68CDD5;
+
+}
+.return{
+	margin-left:2.9rem;
+	margin-top:1.67rem;
+}
+.logo{
+	text-align: center;
+	margin-top:2.9rem;
+}
+.text{
+	margin:0 auto;
+	color:#FFFFFF;
+	/*text-align: center;*/
+	font-size: 2.25rem;
+	margin-top: 9.9rem;
+	height:16rem;
+	width:37.5rem; 
+	/*line-height: 2.25rem;*/
+
+}
+.foot{
+	width:34.2rem;
+	height:11rem;
+	margin:0 auto;
+	margin-top:15rem;
+	font-size: 1.5rem;
+	color:#FFFFFF;
+	
+}
+.foot p{
+	margin-top:1.5rem;
+}
+.last{
+	width:10rem;
+	height:11rem;
+	float:left;
+}
+
+.last1{
+	width:10rem;
+	height:11rem;
+	float:right;
+}
+.clear{
+	clear:both;
+}
+
+/*@media screen and (max-width:20%){
+	html,body{font-size:5px;}
+	.main{
+		justify-content:center;
+	}
+}
+		*/
